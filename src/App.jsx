@@ -35,15 +35,16 @@ const WeatherDetails = ({ icon, temp, city, country, lat, log, humidity, wind })
           <span>{log}</span>
         </div>
       </div>
+
       <div className="data-container">
         <div className="element">
-
           <img src={humidityIcon} alt="humidity" className="icon" />
           <div className="data">
             <div className="humidity-percent">{humidity}%</div>
             <div className="text">Humidity</div>
           </div>
         </div>
+
         <div className="element">
           <img src={windIcon} alt="wind" className="icon" />
           <div className="data">
@@ -108,6 +109,7 @@ function App() {
   }
 
   const search = async () => {
+    
     setLoading(true);
 
     let url =
